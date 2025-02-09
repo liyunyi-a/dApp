@@ -28,7 +28,7 @@ function App() {
   
         try {
           const bal = await tokenSwapContract.getBalance(userAccount);
-          console.log("User Balance:", bal.toString()); // 输出用户余额
+          console.log("User Balance:", bal.toString());
           setBalance(Number(bal));
         } catch (error) {
           console.error("Error fetching balance:", error);
